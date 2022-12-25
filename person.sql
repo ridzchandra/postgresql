@@ -2,7 +2,7 @@ create table person (
     id BIGSERIAL NOT NULL PRIMARY KEY,
 	firstname VARCHAR(50) NOT NULL,
 	lastname VARCHAR(50) NOT NULL,
-	gender VARCHAR(6) NOT NULL,
+	gender VARCHAR(15) NOT NULL,
 	dateofbirth DATE NOT NULL,
 	email VARCHAR(150),
 	countryofbirth VARCHAR(50) NOT NULL
@@ -22,7 +22,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Marmaduke', 'Matanin', 'Female', '2003-10-09', 'mmataninc@histats.com', 'Tanzania');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Filippo', 'Schustl', 'Male', '2010-02-07', 'fschustld@bravesites.com', 'Sweden');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Angela', 'Zanotti', 'Male', '1996-04-28', 'azanottie@go.com', 'Indonesia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Valentine', 'Ilyukhov', 'Bigender', '2015-08-27', 'vilyukhovf@skype.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Valentine', 'Ilyukhov', 'Male', '2015-08-27', 'vilyukhovf@skype.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Dorolice', 'O''Geneay', 'Female', '2000-08-02', 'dogeneayg@theglobeandmail.com', 'Czech Republic');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ricky', 'Hadland', 'Male', '1965-03-24', null, 'Poland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Isabel', 'Mushet', 'Female', '1991-12-11', 'imusheti@xinhuanet.com', 'China');
@@ -59,7 +59,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Karon', 'Etteridge', 'Female', '2008-03-28', 'ketteridge1d@reverbnation.com', 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Wilfred', 'Bowmaker', 'Female', '1968-05-16', 'wbowmaker1e@sourceforge.net', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Leigh', 'Durrand', 'Male', '1970-09-25', null, 'Ukraine');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Zackariah', 'Dibbe', 'Bigender', '1981-10-15', 'zdibbe1g@wufoo.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Zackariah', 'Dibbe', 'Male', '1981-10-15', 'zdibbe1g@wufoo.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kalle', 'Morson', 'Female', '1972-04-12', null, 'Sweden');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Currie', 'Bark', 'Female', '1966-07-15', 'cbark1i@360.cn', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Andra', 'Urien', 'Female', '1989-03-05', null, 'Spain');
@@ -121,7 +121,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Lissi', 'Redmain', 'Female', '1992-10-02', 'lredmain33@gravatar.com', 'Bangladesh');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Billye', 'Flewan', 'Female', '1995-11-19', 'bflewan34@state.tx.us', 'Ethiopia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gare', 'McFarlan', 'Female', '1996-04-10', 'gmcfarlan35@imgur.com', 'Russia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cherye', 'Coopman', 'Bigender', '1968-03-12', 'ccoopman36@usda.gov', 'South Sudan');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cherye', 'Coopman', 'Male', '1968-03-12', 'ccoopman36@usda.gov', 'South Sudan');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Melisent', 'Abrahams', 'Male', '1993-09-16', null, 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Carolan', 'Corless', 'Male', '1972-11-09', 'ccorless38@wiley.com', 'Poland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Athena', 'Friett', 'Male', '2001-12-30', null, 'China');
@@ -142,7 +142,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Krystle', 'Shawl', 'Female', '1970-08-25', 'kshawl3o@cbsnews.com', 'Vietnam');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Emmanuel', 'McKeeman', 'Female', '1979-02-19', 'emckeeman3p@mail.ru', 'Peru');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Chrysler', 'Hazlehurst', 'Male', '1975-03-01', 'chazlehurst3q@trellian.com', 'Indonesia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kipp', 'Eskell', 'Bigender', '1996-02-19', 'keskell3r@ustream.tv', 'Ivory Coast');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kipp', 'Eskell', 'Male', '1996-02-19', 'keskell3r@ustream.tv', 'Ivory Coast');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Amandie', 'Hogbin', 'Female', '1989-05-02', 'ahogbin3s@home.pl', 'Peru');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Brig', 'Servis', 'Male', '1987-11-28', 'bservis3t@prnewswire.com', 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Freemon', 'Hadlee', 'Male', '1998-07-09', 'fhadlee3u@geocities.com', 'China');
@@ -181,7 +181,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bethina', 'Gierhard', 'Male', '1968-01-31', null, 'Finland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Maggy', 'Brundle', 'Male', '2002-05-05', 'mbrundle4s@deviantart.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Lezlie', 'Robbins', 'Female', '1968-07-01', 'lrobbins4t@illinois.edu', 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gena', 'Lortzing', 'Bigender', '1979-03-17', 'glortzing4u@shinystat.com', 'Argentina');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gena', 'Lortzing', 'Male', '1979-03-17', 'glortzing4u@shinystat.com', 'Argentina');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Shir', 'Geall', 'Female', '1996-12-27', 'sgeall4v@ebay.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cloe', 'Sinott', 'Male', '2002-11-09', null, 'Thailand');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Casar', 'Landy', 'Male', '1973-07-24', 'clandy4x@marketwatch.com', 'Brazil');
@@ -191,7 +191,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Rudd', 'Tremellier', 'Male', '1969-09-03', null, 'France');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Archibaldo', 'Gowling', 'Male', '2012-05-03', null, 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ediva', 'Camidge', 'Male', '1977-02-10', 'ecamidge53@prlog.org', 'France');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Korry', 'Prosh', 'Bigender', '2016-07-04', 'kprosh54@e-recht24.de', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Korry', 'Prosh', 'Male', '2016-07-04', 'kprosh54@e-recht24.de', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Felizio', 'Fibbitts', 'Female', '2021-12-09', 'ffibbitts55@hubpages.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Nelle', 'Monkton', 'Male', '2015-04-03', null, 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mickie', 'Newling', 'Female', '1967-05-20', 'mnewling57@google.ru', 'Ireland');
@@ -219,7 +219,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Nobie', 'Syder', 'Male', '1980-10-15', 'nsyder5t@com.com', 'Latvia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Baird', 'Leavens', 'Female', '1992-04-29', null, 'Lebanon');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ninetta', 'Gideon', 'Female', '1991-05-25', 'ngideon5v@vinaora.com', 'Indonesia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Octavius', 'Royse', 'Bigender', '1969-11-17', 'oroyse5w@wisc.edu', 'Sudan');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Octavius', 'Royse', 'Male', '1969-11-17', 'oroyse5w@wisc.edu', 'Sudan');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Nikos', 'Borzone', 'Female', '2006-11-26', null, 'Poland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Vonni', 'Pallis', 'Genderfluid', '2008-11-20', null, 'El Salvador');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Clayton', 'Huntington', 'Male', '1993-07-29', null, 'Russia');
@@ -230,10 +230,10 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Karlene', 'Hanigan', 'Male', '2007-05-29', 'khanigan64@xrea.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Laurene', 'McGlaud', 'Male', '2013-09-17', 'lmcglaud65@un.org', 'Albania');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mortie', 'Robez', 'Female', '1973-12-09', null, 'Comoros');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Micky', 'Tenpenny', 'Bigender', '1990-05-22', 'mtenpenny67@examiner.com', 'Suriname');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Micky', 'Tenpenny', 'Male', '1990-05-22', 'mtenpenny67@examiner.com', 'Suriname');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Abbe', 'Ferronel', 'Genderqueer', '1995-05-01', 'aferronel68@tmall.com', 'Colombia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Dulcie', 'Ferran', 'Male', '2011-07-14', null, 'France');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Latisha', 'Itzcovich', 'Bigender', '1996-11-22', 'litzcovich6a@phpbb.com', 'Indonesia');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Latisha', 'Itzcovich', 'Male', '1996-11-22', 'litzcovich6a@phpbb.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Jennilee', 'Stedman', 'Female', '2013-07-02', 'jstedman6b@surveymonkey.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Delcina', 'Seifenmacher', 'Male', '1982-01-08', null, 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Maxy', 'Ellicombe', 'Male', '2017-06-25', 'mellicombe6d@dropbox.com', 'Thailand');
@@ -272,7 +272,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Aguistin', 'Maciejak', 'Male', '1973-10-25', 'amaciejak7a@wikia.com', 'Niger');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Charmain', 'Curm', 'Male', '1992-07-06', 'ccurm7b@stumbleupon.com', 'Egypt');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cloe', 'Sarfati', 'Female', '1984-01-15', null, 'Sweden');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cinnamon', 'Cornborough', 'Bigender', '2015-02-09', 'ccornborough7d@sogou.com', 'Honduras');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cinnamon', 'Cornborough', 'Male', '2015-02-09', 'ccornborough7d@sogou.com', 'Honduras');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Putnem', 'Bevis', 'Female', '1982-12-25', 'pbevis7e@amazonaws.com', 'Mongolia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Griffith', 'Sammon', 'Genderfluid', '1999-02-09', 'gsammon7f@state.tx.us', 'United States');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Austin', 'Leftly', 'Genderfluid', '1989-12-06', 'aleftly7g@t.co', 'Vietnam');
@@ -330,7 +330,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kary', 'Goldsworthy', 'Female', '1981-11-12', 'kgoldsworthy8w@hibu.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Saba', 'O''Sharry', 'Male', '1987-03-24', null, 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bevin', 'Pleasance', 'Female', '1969-02-09', null, 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Estrellita', 'Mackilpatrick', 'Bigender', '1999-09-06', 'emackilpatrick8z@wiley.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Estrellita', 'Mackilpatrick', 'Male', '1999-09-06', 'emackilpatrick8z@wiley.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Dyana', 'Tupie', 'Non-binary', '1991-02-11', 'dtupie90@hud.gov', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sonja', 'St. Pierre', 'Male', '1975-01-23', 'sstpierre91@mozilla.org', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Marena', 'Bulfoy', 'Male', '2007-10-09', 'mbulfoy92@com.com', 'Portugal');
@@ -355,10 +355,10 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Camella', 'Hogben', 'Female', '1978-10-04', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Davina', 'Marjanski', 'Female', '2010-06-01', null, 'South Korea');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Thane', 'Filimore', 'Male', '2016-07-18', 'tfilimore9n@scientificamerican.com', 'Australia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Robb', 'Rain', 'Bigender', '1998-05-23', null, 'Moldova');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Robb', 'Rain', 'Male', '1998-05-23', null, 'Moldova');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Emelda', 'Lamping', 'Male', '1977-05-07', 'elamping9p@mit.edu', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Taddeo', 'Mickan', 'Female', '2018-04-04', 'tmickan9q@admin.ch', 'Chile');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Millicent', 'Hazlegrove', 'Bigender', '2005-04-26', null, 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Millicent', 'Hazlegrove', 'Male', '2005-04-26', null, 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Clayson', 'Raynor', 'Female', '2008-03-08', 'craynor9s@elegantthemes.com', 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sutton', 'Broggelli', 'Genderqueer', '2015-08-02', 'sbroggelli9t@prlog.org', 'Poland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Durand', 'Torns', 'Male', '2011-04-28', 'dtorns9u@blogspot.com', 'Uruguay');
@@ -412,7 +412,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Joelie', 'Beisley', 'Male', '1972-06-19', 'jbeisleyb6@t.co', 'Palestinian Territory');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gertruda', 'Franschini', 'Male', '1999-03-25', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Theo', 'Raff', 'Female', '2009-11-07', 'traffb8@blogger.com', 'Sweden');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Towney', 'Conor', 'Bigender', '1990-10-25', null, 'Russia');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Towney', 'Conor', 'Male', '1990-10-25', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Garfield', 'Mandres', 'Female', '2009-01-29', 'gmandresba@bizjournals.com', 'Myanmar');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ram', 'Castree', 'Male', '2000-03-01', 'rcastreebb@nature.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ambrosio', 'McCardle', 'Male', '2012-04-05', 'amccardlebc@github.com', 'Indonesia');
@@ -441,7 +441,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kylie', 'Brindle', 'Male', '1998-03-16', 'kbrindlebz@si.edu', 'Brazil');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kala', 'MacClancey', 'Male', '2016-08-16', 'kmacclanceyc0@aboutads.info', 'Vietnam');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Jorie', 'Clutten', 'Female', '1964-04-29', 'jcluttenc1@a8.net', 'Brazil');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mame', 'Durden', 'Bigender', '1972-10-04', 'mdurdenc2@reuters.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mame', 'Durden', 'Male', '1972-10-04', 'mdurdenc2@reuters.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Clarey', 'Nolda', 'Male', '2009-10-17', 'cnoldac3@twitpic.com', 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Morten', 'Basketter', 'Male', '1994-09-01', 'mbasketterc4@harvard.edu', 'Bangladesh');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Annadiana', 'Lemme', 'Male', '2003-06-18', 'alemmec5@webmd.com', 'France');
@@ -515,7 +515,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Brockie', 'Mulhill', 'Female', '2013-10-01', 'bmulhille1@go.com', 'Portugal');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sigismond', 'Sanzio', 'Male', '1990-10-09', 'ssanzioe2@jigsy.com', 'Honduras');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ernest', 'Divis', 'Genderqueer', '1975-07-10', null, 'Thailand');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Millard', 'Uden', 'Bigender', '2016-06-16', 'mudene4@admin.ch', 'Indonesia');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Millard', 'Uden', 'Male', '2016-06-16', 'mudene4@admin.ch', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Edsel', 'Loiterton', 'Male', '1993-04-18', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Guss', 'Wroe', 'Male', '2004-05-19', null, 'Poland');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Garvey', 'Roisen', 'Female', '1998-03-12', null, 'Russia');
@@ -625,7 +625,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Winnie', 'Burnyeat', 'Genderfluid', '1972-07-12', null, 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Susanetta', 'McDougle', 'Female', '2002-10-15', 'smcdougleh4@unesco.org', 'Vietnam');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Lucas', 'Newbold', 'Male', '2010-07-11', 'lnewboldh5@meetup.com', 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Daphne', 'Wilden', 'Bigender', '2009-10-25', 'dwildenh6@xrea.com', 'Indonesia');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Daphne', 'Wilden', 'Male', '2009-10-25', 'dwildenh6@xrea.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ragnar', 'Henke', 'Female', '1987-02-23', null, 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Loleta', 'Collum', 'Female', '1968-01-07', 'lcollumh8@ox.ac.uk', 'Jamaica');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gayler', 'Basler', 'Female', '1999-03-10', null, 'Albania');
@@ -707,7 +707,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Margalit', 'Paal', 'Female', '2007-07-08', 'mpaaljd@redcross.org', 'South Africa');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Denise', 'Annell', 'Female', '2011-07-01', 'dannellje@scientificamerican.com', 'Czech Republic');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Denney', 'Kester', 'Female', '1989-03-16', 'dkesterjf@php.net', 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Willi', 'Soulsby', 'Bigender', '2009-01-03', null, 'Peru');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Willi', 'Soulsby', 'Male', '2009-01-03', null, 'Peru');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sara', 'Arnecke', 'Male', '2010-12-15', 'sarneckejh@surveymonkey.com', 'Sweden');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cherry', 'Rickerd', 'Male', '2012-05-31', null, 'Ukraine');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cris', 'Searchwell', 'Female', '1978-08-13', 'csearchwelljj@illinois.edu', 'Liberia');
@@ -723,7 +723,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Karylin', 'Scrivinor', 'Genderfluid', '1984-07-07', 'kscrivinorjt@constantcontact.com', 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Cornela', 'Fortey', 'Genderfluid', '2003-09-16', 'cforteyju@google.co.jp', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Amanda', 'Standingford', 'Female', '2007-02-21', null, 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Rabbi', 'Rogier', 'Bigender', '2009-11-15', 'rrogierjw@hp.com', 'Iran');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Rabbi', 'Rogier', 'Male', '2009-11-15', 'rrogierjw@hp.com', 'Iran');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Alastair', 'Casswell', 'Female', '2003-06-08', 'acasswelljx@vinaora.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Fidel', 'Bontoft', 'Polygender', '1970-08-19', 'fbontoftjy@altervista.org', 'Tunisia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bobbette', 'Lay', 'Male', '1999-04-08', 'blayjz@wix.com', 'Brazil');
@@ -755,7 +755,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Huntington', 'Nelsey', 'Polygender', '1986-12-10', null, 'Brazil');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ariadne', 'Delacourt', 'Female', '1973-11-18', 'adelacourtkq@techcrunch.com', 'Malaysia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ellie', 'Pearce', 'Female', '2020-06-12', 'epearcekr@google.pl', 'Dominican Republic');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Roxanna', 'Barbara', 'Bigender', '2019-06-10', 'rbarbaraks@comsenz.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Roxanna', 'Barbara', 'Male', '2019-06-10', 'rbarbaraks@comsenz.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Haven', 'Laurenzi', 'Female', '2020-07-21', 'hlaurenzikt@hatena.ne.jp', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bonny', 'McDugal', 'Male', '1992-07-24', null, 'Nigeria');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Harvey', 'Spottswood', 'Female', '1996-11-16', 'hspottswoodkv@usatoday.com', 'China');
@@ -766,14 +766,14 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kimbell', 'Reboulet', 'Agender', '1996-02-02', 'krebouletl0@un.org', 'Canada');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sheffy', 'Houselee', 'Female', '2003-07-12', 'shouseleel1@merriam-webster.com', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Jerald', 'Cheine', 'Male', '2017-06-23', 'jcheinel2@macromedia.com', 'North Korea');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Hadlee', 'Evanson', 'Bigender', '1971-10-07', 'hevansonl3@marketwatch.com', 'France');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Hadlee', 'Evanson', 'Male', '1971-10-07', 'hevansonl3@marketwatch.com', 'France');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Maribelle', 'Aberkirdo', 'Female', '1985-07-18', 'maberkirdol4@opensource.org', 'Vietnam');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Zechariah', 'Howford', 'Female', '2015-10-20', 'zhowfordl5@mac.com', 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ilsa', 'Mensler', 'Male', '1996-03-27', 'imenslerl6@hatena.ne.jp', 'Indonesia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Dominique', 'Newvell', 'Male', '2002-02-16', 'dnewvelll7@4shared.com', 'Afghanistan');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bernadette', 'Livzey', 'Male', '1991-08-02', null, 'Netherlands');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bayard', 'Abrahamowitcz', 'Female', '2015-11-27', 'babrahamowitczl9@dedecms.com', 'Burkina Faso');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Clayson', 'Cotterill', 'Bigender', '1981-06-14', null, 'Russia');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Clayson', 'Cotterill', 'Male', '1981-06-14', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Delbert', 'Heisler', 'Female', '1999-10-19', 'dheislerlb@prlog.org', 'Ukraine');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Colby', 'Jentle', 'Female', '1978-10-26', 'cjentlelc@phoca.cz', 'Kazakhstan');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Natalie', 'Meriton', 'Male', '1985-05-07', null, 'Brazil');
@@ -810,7 +810,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Colline', 'Veal', 'Male', '2010-11-12', 'cvealm8@yellowbook.com', 'Uganda');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Adams', 'Swadden', 'Female', '2012-05-26', 'aswaddenm9@technorati.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Jerrilee', 'McKeachie', 'Female', '2008-04-27', null, 'Thailand');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Garrik', 'Stubbert', 'Bigender', '2003-01-14', 'gstubbertmb@tuttocitta.it', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Garrik', 'Stubbert', 'Male', '2003-01-14', 'gstubbertmb@tuttocitta.it', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Kathy', 'Martin', 'Male', '2020-11-05', 'kmartinmc@amazonaws.com', 'Brazil');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Madalena', 'Brolechan', 'Male', '2019-09-29', 'mbrolechanmd@geocities.jp', 'Thailand');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Margie', 'Bunson', 'Female', '2013-05-21', 'mbunsonme@bandcamp.com', 'Kosovo');
@@ -892,11 +892,11 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Amelie', 'Albury', 'Female', '2001-07-05', null, 'Portugal');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Adeline', 'Wratten', 'Male', '2009-12-10', 'awrattenoj@jiathis.com', 'Mongolia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Job', 'Blaydon', 'Male', '1992-07-05', null, 'India');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Addie', 'Eyles', 'Bigender', '2008-04-20', 'aeylesol@imgur.com', 'Thailand');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Addie', 'Eyles', 'Male', '2008-04-20', 'aeylesol@imgur.com', 'Thailand');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Heall', 'Wankling', 'Female', '2003-10-09', 'hwanklingom@tmall.com', 'Thailand');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Laurie', 'Brunke', 'Female', '2011-10-24', null, 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Tina', 'Sawfoot', 'Female', '1967-12-09', 'tsawfootoo@mit.edu', 'Ethiopia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Link', 'Cockarill', 'Bigender', '1998-01-01', null, 'Kazakhstan');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Link', 'Cockarill', 'Male', '1998-01-01', null, 'Kazakhstan');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Matteo', 'Sellars', 'Agender', '1967-07-05', null, 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Andre', 'Massingberd', 'Male', '1976-08-21', null, 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Fey', 'Belf', 'Female', '1970-11-24', null, 'China');
@@ -934,7 +934,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Horton', 'Delph', 'Male', '1966-09-07', 'hdelphpo@netvibes.com', 'France');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Nikolas', 'Shilling', 'Female', '1987-12-08', 'nshillingpp@yelp.com', 'Peru');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mariquilla', 'Comins', 'Male', '1965-07-19', 'mcominspq@spotify.com', 'Philippines');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Lizette', 'Clapp', 'Bigender', '1993-08-22', 'lclapppr@hugedomains.com', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Lizette', 'Clapp', 'Male', '1993-08-22', 'lclapppr@hugedomains.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Franny', 'Simkovich', 'Female', '2005-12-11', null, 'Argentina');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Marthe', 'Ridolfo', 'Male', '1968-03-06', 'mridolfopt@over-blog.com', 'Madagascar');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Trula', 'Domingues', 'Male', '1976-07-01', 'tdominguespu@biblegateway.com', 'Argentina');
@@ -950,7 +950,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Gideon', 'Obee', 'Female', '1991-11-17', null, 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Bel', 'Berdale', 'Male', '2019-03-23', 'bberdaleq5@cargocollective.com', 'Philippines');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Marjorie', 'Bedward', 'Male', '2011-10-11', 'mbedwardq6@china.com.cn', 'Peru');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ulrich', 'Duffell', 'Bigender', '2008-04-16', 'uduffellq7@google.it', 'China');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Ulrich', 'Duffell', 'Male', '2008-04-16', 'uduffellq7@google.it', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Frankie', 'Callister', 'Female', '2008-11-04', 'fcallisterq8@exblog.jp', 'Sri Lanka');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Raynell', 'Spenclay', 'Female', '1976-04-18', 'rspenclayq9@bravesites.com', 'Ukraine');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Sanders', 'Sedgeworth', 'Non-binary', '1965-12-01', 'ssedgeworthqa@google.com.br', 'Zambia');
@@ -993,7 +993,7 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Malia', 'Hemms', 'Male', '2001-10-26', 'mhemmsrb@slate.com', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Devina', 'Millyard', 'Male', '2006-03-20', 'dmillyardrc@biglobe.ne.jp', 'China');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Mavis', 'Bocke', 'Female', '1991-07-17', null, 'Bolivia');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Melesa', 'Symones', 'Bigender', '1977-10-21', 'msymonesre@yellowbook.com', 'Peru');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Melesa', 'Symones', 'Male', '1977-10-21', 'msymonesre@yellowbook.com', 'Peru');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Malchy', 'Sillick', 'Agender', '1989-07-22', null, 'Costa Rica');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Dorthy', 'Custard', 'Male', '1987-07-24', 'dcustardrg@dagondesign.com', 'Croatia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Geoffrey', 'Luigi', 'Female', '2006-07-28', 'gluigirh@thetimes.co.uk', 'Mauritius');
@@ -1004,6 +1004,6 @@ insert into person (firstname, lastname, gender, dateofbirth, email, countryofbi
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Eddy', 'Duckerin', 'Male', '2007-01-17', 'educkerinrm@wordpress.com', 'Argentina');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Farra', 'Quiddihy', 'Female', '1988-08-07', 'fquiddihyrn@woothemes.com', 'Russia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Evvy', 'Simoneau', 'Female', '1998-07-03', 'esimoneauro@webeden.co.uk', 'China');
-insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Farly', 'Rostron', 'Bigender', '2019-01-29', null, 'Yemen');
+insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Farly', 'Rostron', 'Male', '2019-01-29', null, 'Yemen');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Simonette', 'Sympson', 'Male', '1969-04-16', 'ssympsonrq@deviantart.com', 'Mongolia');
 insert into person (firstname, lastname, gender, dateofbirth, email, countryofbirth) values ('Vicky', 'Do Rosario', 'Female', '1990-05-27', 'vdorosariorr@webmd.com', 'Peru');

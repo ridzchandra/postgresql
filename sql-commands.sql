@@ -47,10 +47,10 @@ CREATE DATABASE <db-name>;
 DROP DATABASE <db-name>;
 
 -- To change the password of a postgresql user
-ALTER USER <username> WITH PASSWORD <password>;
+ALTER USER <username> WITH PASSWORD '<password>';
 
 -- Create a new postgres user
-CREATE USER <username> WITH PASSWORD <password>;
+CREATE USER <username> WITH PASSWORD '<password>';
 
 -- Give a postgresql user privileges
 ALTER USER <username> WITH <privilege-name-in-all-caps-no-sapce>;
