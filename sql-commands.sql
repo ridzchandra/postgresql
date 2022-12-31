@@ -220,7 +220,7 @@ SELECT firstname, lastName, gender, countryofbirth, dateOfBirth, AGE(NOW(), date
 -- Primary keys - to identify a unique row 
 -- DROP a PRIMARY KEY CONSTRAINT 
 -- Get the name of the constraint from \d <tablename> under Indexes
-ALTER TABLE person DROP CONSTRAINT 'person_pkey';
+ALTER TABLE person DROP CONSTRAINT "person_pkey";
 -- ADD PRIMARY KEY 
 ALTER TABLE person ADD PRIMARY KEY (id);
 
@@ -231,7 +231,7 @@ ALTER TABLE person ADD CONSTRAINT <constraint-name> UNIQUE(email);
 ALTER TABLE person ADD CONSTRAINT gender_constraint CHECK(gender = 'Female' OR gender = 'Male');
 
 
--- FOR DELETE AND UPDATE YOU ALWAYS MIGHT WANNA HAVE WHERE CLAUSE UNLESS YOU'RE TRYINGTO DELETE OR UPDATE THE ENTIRE TABLE
+-- FOR DELETE AND UPDATE YOU ALWAYS MIGHT WANNA HAVE WHERE CLAUSE UNLESS YOU'RE TRYING TO DELETE OR UPDATE THE ENTIRE TABLE
 
 -- Delete records 
 DELETE FROM person 
@@ -302,7 +302,7 @@ person RIGHT JOIN car on person.car_id = car.id;
 -- Deleting a car when it has a person has a Foreign key to car violates the foreign key constraint(error). So make sure no person has a relation to the car you want to delete before you try deleting the car
 UPDATE person
 SET car_id = NULL
-WHERE id = 3;
+WHERE car_id = 3;
 
 DELETE FROM car 
 WHERE id = 3;
@@ -340,3 +340,5 @@ SELECT uuid_generate_v4();
 SELECT * FROM
 person JOIN car 
 USING (car_uid);
+
+-- VISIT THIS FOR MORE ON POSTGRES: https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/
