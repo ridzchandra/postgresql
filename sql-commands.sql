@@ -155,6 +155,10 @@ ORDER BY dateOfBirth;
 SELECT * FROM person
 WHERE email LIKE '_______@google.%';
 
+-- ~ to match regex
+SELECT * FROM person
+WHERE email ~ 'google.com$';
+
 -- GROUP BY - aggregations
 SELECT countryofbirth, COUNT(*) FROM person GROUP BY countryofbirth ORDER BY COUNT(*) DESC;
 
