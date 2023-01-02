@@ -345,4 +345,79 @@ SELECT * FROM
 person JOIN car 
 USING (car_uid);
 
--- VISIT THIS FOR MORE ON POSTGRES: https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/
+-- VISIT THIS FOR MORE ON POSTGRES JOINS: https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/
+
+-- TRANSACTIONS
+-- https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-transaction/
+
+-- SQL FUNCTIONS
+-- https://www.postgresqltutorial.com/postgresql-plpgsql/postgresql-create-function/
+
+-- TRIGGERS
+-- https://www.postgresqltutorial.com/postgresql-triggers/introduction-postgresql-trigger/
+
+-- A trigger is a special user-defined function associated with a table. To create a new trigger, you define a trigger function first, and then bind this trigger function to a table. The difference between a trigger and a user-defined function is that a trigger is automatically invoked when a triggering event occurs.
+
+-- CURSORS
+-- https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-cursor/
+
+
+-- ************************************************************
+-- Derek Banas PostgreSQL Tutorial Full Course 2022 on Youtube:
+-- DB for reference: sales_db
+
+ 
+-- VIEWS
+-- A view is a named query that provides another way to present data in the database tables. A view is defined based on one or more tables which are known as base tables. When you create a view, you basically create a query and assign a name to the query. Therefore, a view is useful for wrapping a commonly used complex query.
+
+CREATE VIEW purchase_order_overview AS
+SELECT sales_order.purchase_order_number, customer.company, 
+sales_item.quantity, product.supplier, product.name, item.price, 
+--Can’t use total if you want this to be updated Fix Below
+(sales_item.quantity * item.price) AS Total,
+--Remove concat if you want this to be updatable 
+CONCAT(sales_person.first_name, ' ', sales_person.last_name) AS Salesperson
+FROM sales_order     -- Join some tables
+JOIN sales_item
+ON sales_item.sales_order_id = sales_order.id    -- Tables go together by joining on sales order id
+-- Any time you join tables you need to find foreign and primary keys that match up
+JOIN item
+ON item.id = sales_item.item_id    -- Join item as well using matching item id
+JOIN customer
+ON sales_order.cust_id = customer.id 
+JOIN product
+ON product.id = item.product_id
+JOIN sales_person
+ON sales_person.id = sales_order.sales_person_id
+ORDER BY purchase_order_number;
+
+
+-- A PostgreSQL view is updatable when it meets the following conditions:
+-- The defining query of the view must have exactly one entry in the FROM clause, which can be a table or another updatable view.
+-- The defining query must not contain one of the following clauses at the top level: GROUP BY, HAVING, LIMIT, OFFSET, DISTINCT, WITH, UNION, INTERSECT, and EXCEPT.
+-- The selection list must not contain any window function , any set-returning function, or any aggregate function such as SUM, COUNT, AVG, MIN, and MAX.
+-- An updatable view may contain both updatable and non-updatable columns. If you try to insert or update a non-updatable column, PostgreSQL will raise an error.
+
+-- When you execute an update operation such as INSERT, UPDATE or DELETE, PosgreSQL will convert this statement into the corresponding statement of the underlying table.
+
+-- In case you have a WHERE condition in the defining query of a view, you still can update or delete the rows that are not visible through the view. However, if you want to avoid this, you can use CHECK OPTION when you define the view.
+-- Updatable views allow you to issue INSERT, UPDATE, and DELETE statements to update data in the base tables through the views.
+
+
+-- PROCEDURES
+-- A procedure is a database object similar to a function. The key differences are:
+
+-- Procedures are defined with the CREATE PROCEDURE command, not CREATE FUNCTION.
+
+-- Procedures do not return a function value; hence CREATE PROCEDURE lacks a RETURNS clause. However, procedures can instead return data to their callers via output parameters.
+
+-- While a function is called as part of a query or DML command, a procedure is called in isolation using the CALL command.
+
+-- A procedure can commit or roll back transactions during its execution (then automatically beginning a new transaction), so long as the invoking CALL command is not part of an explicit transaction block. A function cannot do that.
+
+-- Certain function attributes, such as strictness, don't apply to procedures. Those attributes control how the function is used in a query, which isn't relevant to procedures.
+
+-- The explanations in the following sections about how to define user-defined functions apply to procedures as well, except for the points made above.
+
+-- Collectively, functions and procedures are also known as routines. There are commands such as ALTER ROUTINE and DROP ROUTINE that can operate on functions and procedures without having to know which kind it is. Note, however, that there is no CREATE ROUTINE command.
+
