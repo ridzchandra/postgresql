@@ -258,7 +258,7 @@ INSERT INTO person (id, firstName, lastName, gender, email, dateOfBirth, country
 VALUES (17, 'Sorky', 'Hadle', 'Male', 'adey@gmail.com', DATE '1962-02-02', 'Poland')
 ON CONFLICT (id,  email) DO NOTHING;
 
--- Upsert -  In some scenarios when you get two inserts consequently you might want the db to take the latest values rather than doing nothing on conflict. EXCLUDED.<column-name> indicates the lasstes value. Below it only updates firstname, lastname, email but leaves the dateofbirth unchanged. 
+-- Upsert -  In some scenarios when you get two inserts consequently you might want the db to take the latest values rather than doing nothing on conflict. EXCLUDED.<column-name> indicates the latest value. Below it only updates firstname, lastname, email but leaves the dateofbirth unchanged. 
 INSERT INTO person (id, firstName, lastName, gender, email, dateOfBirth, countryofbirth)
 VALUES (17, 'Rusty', 'Hadle', 'Male', 'rusty@gmail.com', DATE '1962-02-02', 'Poland')
 ON CONFLICT (id) DO UPDATE
