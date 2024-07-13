@@ -49,8 +49,31 @@ DROP DATABASE <db-name>;
 -- To change the password of a postgresql user
 ALTER USER <username> WITH PASSWORD '<password>';
 
+-- CREATE ROLE
+-- General Purpose: CREATE ROLE is a more general-purpose command used to create a new role. A role can be thought of as an entity that can own database objects (like tables) and have database privileges.
+
+-- Flexibility: Roles can be set up to act like users or groups. By default, a role cannot log in; it's essentially just a set of privileges and ownerships until login capability is granted.
+
+-- Options: When creating a role, you can specify various attributes, such as LOGIN, SUPERUSER, CREATEDB, etc., to define the role's capabilities and access levels.
+
+-- Create a new role
+CREATE ROLE role_name;
+
+-- To make a role similar to a traditional user, you would grant it login privileges:
+CREATE ROLE role_name WITH LOGIN;
+
+-- CREATE USER
+-- Specific Purpose: CREATE USER is a specialized form of the CREATE ROLE command. It creates a new role but implicitly includes LOGIN permission, making it immediately usable as a database user account.
+
+-- Convenience: Essentially, CREATE USER is a shortcut for CREATE ROLE ... WITH LOGIN, plus any other options you might specify. It's designed for creating roles that are specifically intended to log in to the database.
+
 -- Create a new postgres user
 CREATE USER <username> WITH PASSWORD '<password>';
+
+-- Summary
+-- CREATE ROLE is a versatile command for creating roles that can act as users, groups, or both, depending on the options specified.
+-- CREATE USER is a convenience command for creating a role with login capability, intended to be used as a database user account.
+-- In practice, the distinction is mainly about intent and convenience. PostgreSQL treats all roles as part of a unified role system, blurring the lines between "users" and "groups" in traditional database systems.
 
 -- Give a postgresql user privileges
 ALTER USER <username> WITH <privilege-name-in-all-caps-no-sapce>;
